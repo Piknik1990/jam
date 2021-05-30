@@ -14,10 +14,28 @@ We also have at our disposal:
 ## Architecture
 
 The application consists of two microservices:
-* [backend](https://github.com/user/repo/blob/branch/other_file.md) - generates a composition based on the entered data
-* [frontend](https://github.com/user/repo/blob/branch/other_file.md) - displays and, optionally, plays the generated composition  
+* [backend](https://github.com/Piknik1990/jam/blob/arch/backend/README.md) - generates a composition based on the entered data
+* [frontend](https://github.com/Piknik1990/jam/blob/arch/frontend/README.md) - displays and, optionally, plays the generated composition  
 
-These parts of the application are packed into separate Docker images and play the role of microservices. Communication between backend and frontend takes place via REST API. The communication format is described in a separate section of the article. 
+`Users` -(HTTP(S))-> `Frontend` -(REST API)-> `Backend`
+
+### Backend
+
+Communication between backend and frontend takes place via REST API. The communication format is described below in a separate section of the article.
+
+
+### Frontend
+
+### Users
+
+### HTTP(S)
+
+### REST API
+
+### Docker
+
+These parts of the application are packed into separate Docker images and play the role of microservices. Frontend and Backend have a `Dockerfile` for creating a Docker Image.
+
 
 ## Installion
 
